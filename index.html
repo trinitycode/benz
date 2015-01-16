@@ -5,10 +5,13 @@
 
 <h1>Calculator</h1>
 
-<input value="2" id="add1"> + <input value="2" id="add2"> <input type="button" value="=" id="add"> <input id="add_result">
+<input value="2" id="add1"> + <input value="2" id="add2">
+<input type="button" value="=" id="add"> <span id="add_result"></span>
 
 <script>
 $('#add').click(function(){
-  $('#add_result').val(Number($('#add1').val()) + Number($('#add2').val()))
+  var add1 = Number($('#add1').val())
+  var add2 = Number($('#add2').val())
+  $('#add_result').text(add1 + add2)
 })
 </script>
