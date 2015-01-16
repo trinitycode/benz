@@ -1,10 +1,14 @@
 <!doctype html>
 <title>My Page!</title>
-<a href="https://github.com/collinanderson/testproject/edit/gh-pages/index.html" target="_blank">Edit code here</a>
-<h1>Calculator</h1>
-<input>
-<input type="button" name=""
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<a href="https://github.com/collinanderson/testproject/edit/gh-pages/index.html" target="_blank">Edit code here</a>
+
+<h1>Calculator</h1>
+
+<input value="2" id="add1"> + <input value="2" id="add2"> <input type="button" value="=" id="add"> <input id="add_result">
+
 <script>
-$('h1').css('color', 'green');
+$('#add').click(function(){
+  $('#add_result').val($('add1').val() + $('add2').val())
+})
 </script>
