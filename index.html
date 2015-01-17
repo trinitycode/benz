@@ -6,14 +6,44 @@
 
 <h1>Calculator</h1>
 
+<h2>Basic addition</h2>
 <input value="2" id="add1"> + <input value="2" id="add2">
-<input type="button" value="=" id="add"> <span id="add_result"></span>
-
+<input type="button" value="=" id="add_button"> <span id="add_result"></span>
 <script>
-$('#add').click(function(){
-  var add1 = Number($('#add1').val())
-  var add2 = Number($('#add2').val())
-  $('#add_result').text(add1 + add2)
+$('#add_button').click(function(){
+  var add1 = Number($('#add1').val());
+  var add2 = Number($('#add2').val());
+  var result = add1 + add2;
+  $('#add_result').text(result)
 })
 </script>
+
+<h2>Multiplication</h2>
+<input value="2" id="multiply1"> + <input value="2" id="multiply2">
+<input type="button" value="=" id="multiply_button"> <span id="multiply_result"></span>
+<script>
+$('#multiply_button').click(function(){
+  var mutliply1 = Number($('#multiply1').val());
+  var multiply2 = Number($('#multiply2').val());
+  var result = multiply1 * multiply2
+  $('#multiply_result').text(result)
+})
+</script>
+
+  
+<h2>Parameter of rectangle</h2>
+<input value="2" id="width"> + <input value="2" id="height">
+<input type="button" value="calcuate parameter" id="parameter_button"> <span id="parameter_result"></span>
+<script>
+$('#multiply_button').click(function(){
+  var width = Number($('#width').val())
+  var height = Number($('#height').val())
+  // Fill in the formula below
+  var result = width * 2 + height * 2
+  $('#parameter_result').text(result)
+})
+</script>
+  
+  
+
 </body>
