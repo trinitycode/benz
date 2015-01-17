@@ -7,6 +7,7 @@
 
 <h1>Calculator</h1>
 
+
 <h2>Basic addition</h2>
 <input value="1" id="add1">
 +
@@ -21,6 +22,7 @@ $('#addButton').click(function(){
   $('#addResult').text(result)
 })
 </script>
+
 
 <h2>Multiplication</h2>
 <input value="1" id="multiply1">
@@ -65,6 +67,8 @@ $('#parameterButton').click(function(){
 })
 </script>
 
+
+
 <h3>Disappearing Trick</h3>
 <span id="someText">Here is some text</span>
 <input type="button" id="dissappearButton" value="Make it Disappear">
@@ -74,12 +78,13 @@ $('#dissappearButton').click(function(){
 })
 </script>
 
+
 <h3>Reappearing Trick (You'll need to finish this one)</h3>
 <input type="button" id="reappearButton" value="Make it Come back">
 <script>
-$('#dissappearButton').click(function(){
+$('#reappearButton').click(function(){
   // If .hide() makes it hide, Can you guess how to "show" it again?
-  $('#someText')
+  $('#someText').show()
 })
 </script>
 
