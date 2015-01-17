@@ -8,43 +8,80 @@
 <h1>Calculator</h1>
 
 <h2>Basic addition</h2>
-<input value="1" id="add1"> + <input value="2" id="add2">
-<input type="button" value="=" id="add_button"> <span id="add_result"></span>
+<input value="1" id="add1">
++
+<input value="2" id="add2">
+<input type="button" value="=" id="addButton">
+<span id="addResult"></span>
 <script>
-$('#add_button').click(function(){
+$('#addButton').click(function(){
   var add1 = Number($('#add1').val());
   var add2 = Number($('#add2').val());
   var result = add1 + add2;
-  $('#add_result').text(result)
+  $('#addResult').text(result)
 })
 </script>
 
 <h2>Multiplication</h2>
-<input value="1" id="multiply1"> times <input value="2" id="multiply2">
-<input type="button" value="=" id="multiply_button"> <span id="multiply_result"></span>
+<input value="1" id="multiply1">
+times
+<input value="2" id="multiply2">
+<input type="button" value="=" id="multiplyButton">
+<span id="multiplyResult"></span>
 <script>
-$('#multiply_button').click(function(){
+$('#multiplyButton').click(function(){
   var multiply1 = Number($('#multiply1').val());
   var multiply2 = Number($('#multiply2').val());
   var result = multiply1 * multiply2
-  $('#multiply_result').text(result)
+  $('#multiplyResult').text(result)
 })
 </script>
 
-<h2>Parameter of rectangle</h2>
-Width: <input value="2" id="width">
-Height: <input value="2" id="height">
-<input type="button" value="calcuate parameter" id="parameter_button"> <span id="parameter_result"></span>
+
+<h2>Subtraction (Try making this one by copying the addition code)</h2>
+Try this one yourself.
+Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
+Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
+
+
+
+
+
+
+
+<h2>Parameter of a Rectangle</h2>
+Width:
+<input value="2" id="width">
+Height:
+<input value="3" id="height">
+<input type="button" value="calcuate parameter" id="parameterButton">
+<span id="parameterResult"></span>
 <script>
-$('#parameter_button').click(function(){
+$('#parameterButton').click(function(){
   var width = Number($('#width').val())
   var height = Number($('#height').val())
-  // Fill in the formula below
-  var result = width * 2 + height * 2
-  $('#parameter_result').text(result)
+  // Fill in the formula for a parameter here:
+  var result =
+  $('#parameterResult').text(result)
 })
 </script>
-  
-  
+
+<h3>Disappearing Trick</h3>
+<span id="someText">Here is some text</span>
+<input type="button" id="dissappearButton" value="Make it Disappear">
+<script>
+$('#dissappearButton').click(function(){
+  $('#someText').hide()
+})
+</script>
+
+<h3>Reappearing Trick</h3>
+<input type="button" id="reappearButton" value="Make it Come back">
+<script>
+$('#dissappearButton').click(function(){
+  // If .hide() makes it hide, Can you guess how to "show" it again?
+  $('#someText')
+})
+</script>
 
 </body>
