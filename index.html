@@ -134,4 +134,19 @@ $('#nameButton').click(function(){
 })
 </script>
 
+<h2>What's your favorite color?</h2>
+Name:
+<input id="colorBox">
+<input type="button" value="enter" id="colorButton">
+<span id="colorResponse"></span>
+
+<script>
+$('#colorButton').click(function(){
+  var color = $('#colorBox').val()
+  $('#colorResponse').css('color', color)
+  $('#colorResponse').text('Here is some ' + color + ' just for you!')
+})
+</script>
+
+
 </body>
