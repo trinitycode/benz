@@ -130,7 +130,7 @@ Name:
 <script>
 $('#nameButton').click(function(){
   var name = $('#nameBox').val()
-  $('#nameResponse').text('Hi, ' + name + '! I like that name!')
+  $('#nameResponse').text('Hi, ' + name + '! That\'s a good name!')
 })
 </script>
 
@@ -164,5 +164,30 @@ $('#biggerNumberButton').click(function(){
   }
 })
 </script>
+
+<h2>Using localStorage to remember things</h2>
+Number:
+<input id="rememberBox">
+<input type="button" value="Remember" id="rememberButton">
+<span id="rememberResponse"></span>
+
+<script>
+$('#rememberButton').click(function(){
+  var thingToRemember = $('#rememberBox').val()
+  localStorage.rememberedThing = thingToRemember
+  $('#rememberResponse').text('Ok. "' + thingToRemember + '" will not be forgotten, even if you reload the page!')
+})
+</script>
+
+
+<input type="button" value="Ok, what was that thing I told you to remember?" id="recallButton">
+<span id="recalledThing"></span>
+
+<script>
+$('#recallButton').click(function(){
+  $('#recalledThing').text('Here it is! ' + localStorage.rememberedThing)
+})
+</script>
+
 
 </body>
