@@ -122,6 +122,16 @@ $('#reappearButton').click(function(){
 </script>
 
 <h2>What's your name?</h2>
-Name: <input id="name">
+Name:
+<input id="nameBox">
+<input type="button" value="enter" id="nameButton">
+<span id="nameResponse"></span>
+
+<script>
+$('#nameButton').click(function(){
+  var name = $('nameBox').val()
+  $('#nameResponse').val('Hi, ' + name + '! I like that name!')
+})
+</script>
 
 </body>
