@@ -148,5 +148,21 @@ $('#colorButton').click(function(){
 })
 </script>
 
+<h2>Is your number bigger than 5?</h2>
+Number:
+<input id="biggerNumberBox">
+<input type="button" value="enter" id="biggerNumberButton">
+<span id="biggerNumberAnswer"></span>
+
+<script>
+$('#biggerNumberButton').click(function(){
+  var number = Number($('#biggerNumberBox').val())
+  if (number > 5) {
+      $('#biggerNumberAnswer').text('Yes! ' + number + ' is greater than 5!')
+  } else {
+      $('#biggerNumberAnswer').text('No. ' + number + ' is not bigger than 5. Try a bigger number :)')
+  }
+})
+</script>
 
 </body>
