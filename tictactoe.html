@@ -15,6 +15,7 @@ a {
 </head><body>
 <a href="https://github.com/trinitycode/collina/edit/gh-pages/tictactoe.html" target="_blank">Edit code here</a>
 <a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
+<br>
 <input type="button" id="t1" value="">
 <input type="button" id="t2" value="">
 <input type="button" id="t3" value="">
@@ -27,4 +28,9 @@ a {
 <input type="button" id="b2" value="">
 <input type="button" id="b3" value="">
 
+<script>
+$('input[type="button"]').click(function(){
+  $(this).val('x')
+})
+</script>
 
