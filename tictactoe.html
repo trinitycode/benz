@@ -51,7 +51,7 @@ $('input[type="button"]').click(function(){
   var b2 = $('#b2').val().trim()
   var b3 = $('#b3').val().trim()
   // We need to think backwards. Let's first figure out if we can win this turn.
-  // --- Top row ---
+  // --- Win Top row ---
   // If t1 is o and t2 is o and t3 is empty, take t3. 
   if (t1 == 'o' && t2 == 'o' && t3 == '') {
     $('#t3').val('o')
@@ -64,7 +64,7 @@ $('input[type="button"]').click(function(){
   else if (t1 == 'o' && t2 == '' && t3 == 'o') {
     $('#t1').val('o')
   }
-  // Ok, Middle Row
+  // Ok, Win Middle Row
   else if (m1 == 'o' && m2 == 'o' && m3 == '') {
     $('#m3').val('o')
   }
@@ -77,6 +77,41 @@ $('input[type="button"]').click(function(){
   // Can you do the bottom row? (it's fine to copy and paste)
   
   
+  
+  // Same thing, except columns
+  
+  
+  // The two diagonals.
+  
+  
+  
+  
+  // ---  Ok, Now Blocking ---
+  // Block top row
+  else if (t1 == 'x' && t2 == 'x' && t3 == '') {
+    $('#m3').val('o')
+  }
+  else if (t1 == 'x' && t2 == '' && t3 == 'x') {
+    $('#m2').val('o')
+  }
+  else if (t1 == '' && t2 == 'x' && t3 == 'x') {
+    $('#m1').val('o')
+  }
+  // Block middle row
+  else if (m1 == 'x' && m2 == 'x' && m3 == '') {
+    $('#m3').val('o')
+  }
+  else if (m1 == 'x' && m2 == '' && m3 == 'x') {
+    $('#m2').val('o')
+  }
+  else if (m1 == '' && m2 == 'x' && m3 == 'x') {
+    $('#m1').val('o')
+  }
+
+  
+  
+  
+  // --- 
   
   
   
