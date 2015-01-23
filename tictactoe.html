@@ -16,21 +16,34 @@ a {
 <a href="https://github.com/trinitycode/collina/edit/gh-pages/tictactoe.html" target="_blank">Edit code here</a>
 <a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
 <br>
-<input type="button" id="t1" value="_">
-<input type="button" id="t2" value="_">
-<input type="button" id="t3" value="_">
+<input type="button" id="t1" value="  ">
+<input type="button" id="t2" value="  ">
+<input type="button" id="t3" value="  ">
 <br>
-<input type="button" id="m1" value="_">
-<input type="button" id="m2" value="_">
-<input type="button" id="m3" value="_">
+<input type="button" id="m1" value="  ">
+<input type="button" id="m2" value="  ">
+<input type="button" id="m3" value="  ">
 <br>
-<input type="button" id="b1" value="_">
-<input type="button" id="b2" value="_">
-<input type="button" id="b3" value="_">
+<input type="button" id="b1" value="  ">
+<input type="button" id="b2" value="  ">
+<input type="button" id="b3" value="  ">
 
 <script>
 $('input[type="button"]').click(function(){
   $(this).val('x')
+  var t1 = $('#t1').val().trim()
+  var t2 = $('#t1').val().trim()
+  var t3 = $('#t1').val().trim()
+  var m1 = $('#m1').val().trim()
+  var m2 = $('#m1').val().trim()
+  var m3 = $('#m1').val().trim()
+  var b1 = $('#b1').val().trim()
+  var b2 = $('#b1').val().trim()
+  var b3 = $('#b1').val().trim()
+  // Take the center spot if they didn't take it.
+  if (!m2) {
+    $('#m2').val('o')
+  }
 })
 </script>
 
