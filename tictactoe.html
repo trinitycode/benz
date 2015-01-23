@@ -15,23 +15,28 @@ a {
 </head><body>
 <a href="https://github.com/trinitycode/collina/edit/gh-pages/tictactoe.html" target="_blank">Edit code here</a>
 <a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
-<br>
- 1 2 3 
-<br>
-t
-<input type="button" id="t1" value="  ">
-<input type="button" id="t2" value="  ">
-<input type="button" id="t3" value="  ">
-<br>
-m
-<input type="button" id="m1" value="  ">
-<input type="button" id="m2" value="  ">
-<input type="button" id="m3" value="  ">
-<br>
-b
-<input type="button" id="b1" value="  ">
-<input type="button" id="b2" value="  ">
-<input type="button" id="b3" value="  ">
+
+<table>
+  <tr><td>1</td><td>2</td><td>3</td></tr>
+  <tr>
+<td>t</td>
+<td><input type="button" id="t1" value="  "></td>
+<td><input type="button" id="t2" value="  "></td>
+<td><input type="button" id="t3" value="  "></td>
+</tr>
+<tr>
+<td>m</td>
+<input type="button" id="m1" value="  "></td>
+<input type="button" id="m2" value="  "></td>
+<input type="button" id="m3" value="  "></td>
+</tr>
+<tr>
+<td>b</td>
+<td><input type="button" id="b1" value="  "></td>
+<td><input type="button" id="b2" value="  "></td>
+<td><input type="button" id="b3" value="  "></td>
+</tr>
+</table>
 
 <script>
 $('input[type="button"]').click(function(){
