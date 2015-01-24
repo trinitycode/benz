@@ -30,6 +30,7 @@
     var long = Math.random() * 360 - 180
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(lat, long),
+      animation: google.maps.Animation.DROP,
       map: map,
       title:"Hello World!"
     });
