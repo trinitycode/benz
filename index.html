@@ -174,9 +174,10 @@ $('#randomButton').click(function(){
 })
 </script>
 
+<h2>Bigger Random Numbers</h2>
 <input type="button" id="randomButton2" value="Get a random number between 1 and 10"> <span id="randomResult2"></span>
 <script>
-$('#randomButton1').click(function(){
+$('#randomButton2').click(function(){
   var result = Math.random()
   result = Math.round(result * 10) + 1
   $('#randomResult2').text(result)
