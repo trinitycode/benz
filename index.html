@@ -153,7 +153,6 @@ Number:
 <input id="biggerNumberBox">
 <input type="button" value="enter" id="biggerNumberButton">
 <span id="biggerNumberAnswer"></span>
-
 <script>
 $('#biggerNumberButton').click(function(){
   var number = Number($('#biggerNumberBox').val())
@@ -164,6 +163,32 @@ $('#biggerNumberButton').click(function(){
   }
 })
 </script>
+
+<h2>Which number is bigger?</h2>
+First number:
+<input id="whichBiggerBox1">
+Second number:
+<input id="whichBiggerBox2">
+<input type="button" value="enter" id="whichBiggerButton">
+<span id="whichBiggerAnswer"></span>
+<script>
+$('#whichBiggerButton').click(function(){
+  var first = Number($('#whichBiggerBox1').val())
+  var second = Number($('#whichBiggerBox2').val())
+  if (first > second) {
+      $('#whichBiggerAnswer').text(first + ' is bigger')
+  else if (second > first) {
+      $('#whichBiggerAnswer').text(second + ' is bigger')
+  else if (first == second) {
+      $('#whichBiggerAnswer').text('They are both the same.')
+  } else {
+      $('#biggerNumberAnswer').text('Not sure.')
+  }
+})
+</script>
+
+
+
 
 <h2>Random Numbers</h2>
 <input type="button" id="randomButton" value="Get a random number between 0 and 1"> <span id="randomResult"></span>
