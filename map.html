@@ -12,7 +12,7 @@
           center: { lat: 0, lng: 0},
           zoom: 2
         };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
+        map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -21,6 +21,20 @@
   <body>
   <a href="https://github.com/collinanderson/testproject/edit/gh-pages/map.html" target="_blank">Edit code here</a>
   <a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
+  
+  <input type="button" value="Create random marker" id="randomMarker">
+  <script>
+  $('#randomMarker').click(function(){
+    var lat = Math.random() * 180 - 90
+    var long = Math.random() * 360 - 180
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(lat, long),
+      map: map,
+      title:"Hello World!"
+    });
+  })
+  </script>
+  
 <div id="map-canvas"></div>
   </body>
 </html>
