@@ -165,6 +165,15 @@ $('#biggerNumberButton').click(function(){
 })
 </script>
 
+<h2>Random Numbers</h2>
+<input type="button" id="randomButton" value="Get a random number between 0 and 1"> <span id="randomResult"></span>
+<script>
+$('#randomButton').click(function({
+  var result = Math.random()
+  $('#randomResult').val(result)
+})
+</script>
+
 <h2>Using localStorage to remember things</h2>
 Number:
 <input id="rememberBox">
@@ -190,6 +199,7 @@ $('#recallButton').click(function(){
 })
 </script>
 
-<p><a href="map.html">To the map...</a></p>
+<p><a href="tictactoe.html">Tic Tac Toe</a></p>
+<p><a href="map.html">The map</a></p>
 
 </body>
