@@ -161,10 +161,40 @@ $('input[type="button"]').click(function(){
   else if (t1 == '' && m2 == 'x' && b3 == 'x') {
     $('#t1').val('o')
   }
-
   
   
   
+  // Can you make these moves smarter?
+  // Take the middle if not taken
+  else if (m2 == '') {
+    $('#m2').val('o')
+  }
+  // Corners
+  else if (t1 == '') {
+    $('#t1').val('o')
+  }
+  else if (t3 == '') {
+    $('#t3').val('o')
+  }
+  else if (b1 == '') {
+    $('#b1').val('o')
+  }
+  else if (b3 == '') {
+    $('#b3').val('o')
+  }
+  // Sides
+  else if (t2 == '') {
+    $('#t2').val('o')
+  }
+  else if (m1 == '') {
+    $('#m1').val('o')
+  }
+  else if (m3 == '') {
+    $('#m3').val('o')
+  }
+  else if (b2 == '') {
+    $('#b2').val('o')
+  }
 })
 </script>
 
